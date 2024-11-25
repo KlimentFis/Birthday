@@ -9,18 +9,22 @@
 
 ### Установка
 Клонирование и переход в папку проекта:
-``` python
+``` 
 git clone https://github.com/KlimentFis/Birthday.git && cd Birthday
 ```
 Создание виртуального окружения:
-``` python
+``` 
 python -m venv venv
 ```
+Активация виртуального окружения:
+``` 
+venv\Scripts\activate
+```
 Установка зависимостей:
-``` python
+``` 
 pip install -r req.txt
 ```
 Запуск:
-``` python
+``` 
 python main.py
 ```
