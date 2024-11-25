@@ -30,6 +30,7 @@ python main.py
 ### Как узнать id пользователя
 ```
 from pyrogram import Client
+from config import api_id, api_hash
 
 # Создание клиента
 app = Client(
