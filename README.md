@@ -38,8 +38,7 @@ app = Client(
     api_hash=api_hash
 )
 
-# with app:
-#     user = app.get_users("Ник_Пользователя")
-#     print(user)
+with app:
+    user = app.get_users("Ник_Пользователя")
+    print(user)
 ```
-
