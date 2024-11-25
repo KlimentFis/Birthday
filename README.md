@@ -28,6 +28,7 @@ python main.py
 ```
 
 ### Как узнать id пользователя
+#### С помощью уже установленной библиотеки:
 ``` python
 from pyrogram import Client
 from config import api_id, api_hash
@@ -43,6 +44,35 @@ with app:
     user = app.get_users("Ник_Пользователя")
     print(user)
 ```
+#### С помощью сторонней библиотеки:
+Установка библиотеки:
+```
+pip install telethon
+```
+Код:
+``` python
+ python
+from telethon.sync import TelegramClient
+from config import api_id, api_hash 
+
+# Ваши данные для подключения
+api_id = api_id  # Введите свой API ID
+api_hash = api_hash  # Введите свой API Hash
+phone_number = ''  # Замените на нужный номер телефона
+
+# Создание клиента
+client = TelegramClient('session_name', api_id, api_hash)
+
+async def get_user_id():
+    # Получаем информацию о пользователе по номеру телефона
+    user = await client.get_entity(phone_number)
+    print(f"User ID: {user.id}")
+
+# Запуск клиента
+client.start()
+client.loop.run_until_complete(get_user_id())
+```
+
 
 ### Автоматизация
 
