@@ -49,7 +49,7 @@ with app:
 ```
 pip install telethon
 ```
-Код:
+Поиск данных о пользователе по номеру:
 ``` python
  python
 from telethon.sync import TelegramClient
