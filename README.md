@@ -28,7 +28,7 @@ python main.py
 ```
 
 ### Как узнать id пользователя
-```
+``` python
 from pyrogram import Client
 from config import api_id, api_hash
 
