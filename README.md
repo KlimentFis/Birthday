@@ -50,7 +50,7 @@ with app:
 ``` bat
 @echo off
 REM Переходим в директорию проекта
-cd /d "Путь до папки с проектом"
+cd C:\Users\Klime\My_dir\Projects\Birthday
 
 REM Активируем виртуальное окружение
 call venv\Scripts\activate
@@ -62,5 +62,4 @@ REM Деактивируем виртуальное окружение (опци
 deactivate
 
 pause
-
 ```
